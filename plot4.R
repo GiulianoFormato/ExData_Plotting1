@@ -1,5 +1,6 @@
 
 ####### READING DATASOURCE
+setwd("~/Data Science Spec/R practice/4.Exploratory Graphs/Assignment Week1/")
 rm(list = ls())
 source("load_datasource.R")
 
@@ -19,6 +20,7 @@ with(datasource.df, {
     with(datasource.df, lines(Time, Sub_metering_1))
     with(datasource.df, lines(Time, Sub_metering_2, col = "red"))
     with(datasource.df, lines(Time, Sub_metering_3, col = "blue"))
+    legend("topright",  lty=c(1,1,1), col = c("red", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_2"))
     
     # plot 1.2
     with(datasource.df, plot(Time, Voltage, xlab = "datetime", type = "n"))
@@ -43,6 +45,7 @@ with(datasource.df, {
     with(datasource.df, lines(Time, Sub_metering_1))
     with(datasource.df, lines(Time, Sub_metering_2, col = "red"))
     with(datasource.df, lines(Time, Sub_metering_3, col = "blue"))
+    legend("topright",  lty=c(1,1,1), col = c("red", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_2"))
     
     # plot 1.2
     with(datasource.df, plot(Time, Voltage, xlab = "datetime", type = "n"))
