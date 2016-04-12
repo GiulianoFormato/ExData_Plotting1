@@ -1,6 +1,5 @@
 
 ####### READING DATASOURCE
-setwd("~/Data Science Spec/R practice/4.Exploratory Graphs/Assignment Week1/")
 rm(list = ls())
 source("load_datasource.R")
 
