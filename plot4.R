@@ -68,7 +68,7 @@ with(datasource.df, {
 })
 
 # saving the plot in the device
-png("plot4.png",height=480, width = 480, units="px")
+png("plot4.png",height=480, width = 480, units="px", bg = "transparent")
 par(mfcol = c(2, 2))
 with(datasource.df, {
     

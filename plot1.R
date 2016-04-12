@@ -43,11 +43,12 @@ if (!any(is.na(datasource.df[,1:9])))
 
 ####### PLOT 1
 
-# printing the plot on the window screen
+## printing the plot on the window screen
+par(mfrow=c(1,1))
 with(datasource.df, hist(Global_active_power, col = "red", main = "Global active power", xlab = "Global active power (kilowatts)"))
 
 # saving the plot in the device
-png("plot1.png",height=480, width = 480, units="px")
+png("plot1.png",height=480, width = 480, units="px", bg = "transparent")
 with(datasource.df, hist(Global_active_power, col = "red", main = "Global active power", xlab = "Global active power (kilowatts)"))
 
 # closing the device
